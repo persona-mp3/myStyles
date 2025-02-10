@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script defer src="./js/index.js"></script>
+
+    <title>Css Design Sheets and Components</title>
+</head>
+<body>
+
+
+    <nav class="nav-wrapper">
+        <div class="logo-container">
+            <p>stylesheet</p>
+        </div>
+
+        <div class="nav-links">
+            <a href="#carousel">CAROUSEL</a>
+            <a href="#side-bar">SIDE BAR</a>
+            <a href="#">CARDS</a>
+            <a href="#">IMAGE</a>
+        </div>
+    </nav>
+
+
+    <!-- <p class="carousel-header">Carousel Slider</p>
+ -->
+    <section class="carousel-body">
+        <p class="carousel-header">Carousel Slider</p>
+
+
+        <p>These pictures are all art sculptured and designed by the infamous Spanish architect, <span>Santiago Caltrava</span></p>
+    </section>
+
+
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img src="../assets/img/02.png" alt="wabit sabi" id="slide-1">
+                <img src="../assets/img/homedecor/wabisabi/wabisabi2.jpg" alt="wabit sabi" id="slide-2">
+                <img src="../assets/img/homedecor/wabisabi/wabisabi3.png" alt="wabit sabi" id="slide-3">
+                <img src="../assets/img/03.png" alt="wabit sabi" id="slide-4">
+                <img src="../assets/img/homedecor/wabisabi/wabisabi5.jpg" alt="wabit sabi" id="slide-5">
+            </div>
+
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel-body">
+        <p class="carousel-header">Card Components</p>
+
+        <p>The cards main use should be for summary purposes. If more information is needed, it would be better to navigate the user to such page</p>
+
+        <p>Heres the basic stylesheet for the card component</p>
+
+
+        <pre>        
+            <code>
+            .card-container {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                width: 100%;
+                max-width: 600px;
+                padding: .8rem;
+                gap: 2rem;
+                border-radius: .8rem;
+            }
+
+            .card-img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: .8rem;
+                aspect-ratio: 16/16;
+            }
+
+            .card-content {
+                display: flex;
+                flex-direction: column;
+            }
+                                    
+            
+            </code>
+        </span>
+        <!-- <code>
+            .card-container {
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                width: 100%;
+                max-width: 600px;
+                padding: .8rem;
+                gap: 2rem;
+                /* box-shadow: 0px 2px 10px 0px grey; */
+                border-radius: .8rem;
+                /* SLIDE STYLES */
+                flex-shrink: 0;
+                /* flex-basis: 80%; */
+                flex-grow: 1;
+                scroll-snap-align: center;
+            
+            }
+            
+        </code> -->
+    </div>
+
+
+    <div class="section card-section">
+
+        <div class="card-slider-wrapper">
+            <div class="card-slider">
+                <div class="card-container">
+                    <img class="card-img" src="../assets/img/reserves/duha.jpg" alt="">
+        
+                    <div class="card-content">
+                        <h3>Palau de les Arts </h3>
+                        <p>This is an artwork, designed by Calatrava Santigao</p>
+                    </div>
+        
+                    <div class="card-button">
+                        <button class="secondary-btn">Resources</button>
+                        <button type="button" class="primary-btn">Explore</button>
+            
+                    </div>
+                </div>
+                <div class="card-container">
+                    <img class="card-img" src="../assets/img/twa.jpg" alt="">
+        
+                    <div class="card-content">
+                        <h3>TWA Hotel in New York City </h3>
+                        <p>TWA was designed by Eero Saarinen</p>
+                    </div>
+        
+                    <div class="card-button">
+                        <button class="secondary-btn">Resources</button>
+                        <button type="button" class="primary-btn">Explore</button>
+            
+                    </div>
+                </div>
+                <div class="card-container">
+                    <img class="card-img" src="../assets/img/wabisabi.jpg" alt="">
+        
+                    <div class="card-content">
+                        <h3>Wabi Sabi</h3>
+                        <p>Wabi-Sabi refers to 'embracing the imperfect'</p>
+                    </div>
+        
+                    <div class="card-button">
+                        <button class="secondary-btn">Resources</button>
+                        <button type="button" class="primary-btn">Explore</button>
+            
+                    </div>
+                </div>
+                <div class="card-container">
+                    <img class="card-img" src="../assets/img/brutalism.jpg" alt="">
+        
+                    <div class="card-content">
+                        <h3>Brutalism</h3>
+                        <p>Brutalism concept emerged in the UK 1990's</p>
+                    </div>
+        
+                    <div class="card-button">
+                        <button class="secondary-btn">Resources</button>
+                        <button type="button" class="primary-btn">Explore</button>
+            
+                    </div>
+                </div>
+                <div class="card-container">
+                    <img class="card-img" src="../assets/img/lecobousier.jpg" alt="">
+        
+                    <div class="card-content">
+                        <h3>Le Cobousier </h3>
+                        <p>Inspiration from Le Cobusier architecture design</p>
+                    </div>
+        
+                    <div class="card-button">
+                        <button class="secondary-btn">Resources</button>
+                        <button type="button" class="primary-btn">Explore</button>
+            
+                    </div>
+                </div>
+                <div class="card-container">
+                    <img class="card-img" src="../assets/img/bahuasLamp.jpg" alt="">
+        
+                    <div class="card-content">
+                        <h3>Bahuas Lamp </h3>
+                        <p>Designer after the concept of Walter Giorpano</p>
+                    </div>
+        
+                    <div class="card-button">
+                        <button class="secondary-btn">Resources</button>
+                        <button type="button" class="primary-btn">Explore</button>
+            
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <!-- <div class="card-container">
+            <img class="card-img" src="../assets/img/reserves/duha.jpg" alt="">
+
+            <div class="card-content">
+                <h3>Palau de les Arts </h3>
+                <p>This is an artwork, designed by Calatrava Santigao</p>
+            </div>
+
+            <div class="card-button">
+                <button class="secondary-btn">Resources</button>
+                <button type="button" class="primary-btn">Explore</button>
+    
+            </div>
+        </div> -->
+    </div>
+    
+</body>
+</html>
